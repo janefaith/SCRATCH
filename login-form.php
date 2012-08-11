@@ -2,9 +2,25 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <link href="css/login.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+
 <title>Login</title>
+
+<script src="lib/jquery.js" type="text/javascript"></script>
+ <script src="facebox/facebox.js" type="text/javascript"></script>
+
+ 
 <br><br><br><br><br><br><br><br>
 
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox({
+        loadingImage : 'facebox/loading.gif',
+        closeImage   : 'facebox/closelabel.png'
+      })
+    })
+  </script>
+  
 <body background="images/diagonal.jpg">
 <form>
           <div class="box">
@@ -20,7 +36,10 @@
 			
              <label>
 			 <div class="left">
-               <span>Need an account?</span> <input type="button" class="submit" value="REGISTRATION" style="font: bold 14px Arial"/>
+               <span>Need an account?</span>
+			   <a rel="facebox" href="register-form.php"> 
+			   <input type="button" class="submit" value="REGISTRATION" style="font: bold 14px Arial;"/>
+			   </a>
 			   </div>
             </label>
             
