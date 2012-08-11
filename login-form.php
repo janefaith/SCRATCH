@@ -20,7 +20,7 @@
 			
              <label>
 			 <div class="left">
-               Need an account? <input type="button" class="submit" value="REGISTRATION" style="font: bold 14px Arial"/>
+               <span>Need an account?</span> <input type="button" class="submit" value="REGISTRATION" style="font: bold 14px Arial"/>
 			   </div>
             </label>
             
